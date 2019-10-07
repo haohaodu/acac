@@ -1,0 +1,14 @@
+﻿.footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: black;
+    color: #fff;
+}
+.section-image {
+    object-fit: cover;
+    height: 16rem !important;
+    width: 100% !important;
+}
+
+.headFront {
+}
