@@ -1,22 +1,34 @@
 <?php
-// Check for empty fields
-if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['message']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-  http_response_code(500);
-  exit();
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+$subject = $_POST['subject'];
+header('Content-Type: application/json');
+if ($name === ''){
+print json_encode(array('message' => 'Name cannot be empty', 'code' => 0));
+exit();
 }
-
-$name = strip_tags(htmlspecialchars($_POST['name']));
-$email = strip_tags(htmlspecialchars($_POST['email']));
-$phone = strip_tags(htmlspecialchars($_POST['phone']));
-$message = strip_tags(htmlspecialchars($_POST['message']));
-
-// Create the email and send the message
-$to = "yourname@yourdomain.com"; // Add your email address inbetween the "" replacing yourname@yourdomain.com - This is where the form will send a message to.
-$subject = "Website Contact Form:  $name";
-$body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email\n\nPhone: $phone\n\nMessage:\n$message";
-$header = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-$header .= "Reply-To: $email";	
-
-if(!mail($to, $subject, $body, $header))
-  http_response_code(500);
+if ($email === ''){
+print json_encode(array('message' => 'Email cannot be empty', 'code' => 0));
+exit();
+} else {
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
+print json_encode(array('message' => 'Email format invalid.', 'code' => 0));
+exit();
+}
+}
+if ($subject === ''){
+print json_encode(array('message' => 'Subject cannot be empty', 'code' => 0));
+exit();
+}
+if ($message === ''){
+print json_encode(array('message' => 'Message cannot be empty', 'code' => 0));
+exit();
+}
+$content="From: $name \nEmail: $email \nMessage: $message";
+$recipient = "youremail@here.com";
+$mailheader = "From: $email \r\n";
+mail($recipient, $subject, $content, $mailheader) or die("Error!");
+print json_encode(array('message' => 'Email successfully sent!', 'code' => 1));
+exit();
 ?>
