@@ -1,14 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\animate.css",
     "\\css",
     "\\img",
-    "\\img\\portfolio",
-    "\\img\\portfolio\\collage",
-    "\\img\\portfolio\\events",
     "\\js",
     "\\mail"
   ],
-  "SelectedNode": "\\img\\portfolio\\collage\\collage4.PNG",
+  "SelectedNode": "\\animate.css",
   "PreviewInSolutionExplorer": false
 }
