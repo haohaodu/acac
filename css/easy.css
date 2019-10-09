@@ -40,7 +40,11 @@
 
 .flipInY {
     animation-duration: 1s !important;
-    animation-delay: 0.5s !important;
+    animation-delay: 0.25s !important;
+}
+
+.lightSpeedIn{
+animation-delay: 0.75s !important;
 }
 
 .masthead .masthead-avatar{
@@ -49,4 +53,11 @@
 
 .headIcon{
 	width:6rem;
+}
+.rightlightspeedin{
+    animation-direction: reverse !important;
+	animation-delay: 1.25s !important;
+}
+.googleForms{
+	text-align: center !important;
 }
