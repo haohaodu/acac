@@ -11,6 +11,22 @@
 }
 
 .headFront {
+	background-image: url("../img/portfolio/group.PNG");  width: 100%;
+	  height: auto !important;
+	  background-repeat: no-repeat !important;
+	  background-size: cover !important;
+}
+
+.headFront: before{
+	background: (0,0,0,0.5) !important;
+	z-index: 3 !important;
+}
+.headFront:hover:before {
+    background: none !important;
+}
+
+.haedFront subHeadFront{
+	z-index: 4 !important;
 }
 
 .animated {
@@ -25,4 +41,12 @@
 .flipInY {
     animation-duration: 1s !important;
     animation-delay: 0.5s !important;
+}
+
+.masthead .masthead-avatar{
+	width: 20rem;
+}
+
+.headIcon{
+	width:6rem;
 }
