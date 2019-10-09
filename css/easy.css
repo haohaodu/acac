@@ -12,3 +12,17 @@
 
 .headFront {
 }
+
+.animated {
+    animation-duration: 1s !important;
+    animation-delay: 0s !important;
+}
+
+.rubberBand {
+    animation-name: rubberBand;
+}
+
+.flipInY {
+    animation-duration: 1s !important;
+    animation-delay: 0.5s !important;
+}

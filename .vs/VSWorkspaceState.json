@@ -2,9 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\css",
+    "\\img",
+    "\\img\\portfolio",
+    "\\img\\portfolio\\events",
     "\\js",
     "\\mail"
   ],
-  "SelectedNode": "\\js\\freelancer.js",
+  "SelectedNode": "\\img\\portfolio\\events",
   "PreviewInSolutionExplorer": false
 }
