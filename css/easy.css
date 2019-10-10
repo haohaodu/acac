@@ -46,13 +46,19 @@
 
 .flipInY {
     animation-duration: 1s !important;
-    animation-delay: 0.75s !important;
+    animation-delay: 0.5s !important;
+}
+
+.intro1{
+	animation-delay: 0.75s !important;
 }
 
 .lightSpeedIn{
-animation-delay: 1.25s !important;
+animation-delay: 1.5s !important;
 }
-
+.acacLogo{
+animation-delay: 1s !important;
+}
 .masthead .masthead-avatar{
 	width: 10rem;
 }
