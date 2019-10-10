@@ -11,19 +11,25 @@
 }
 
 .headFront {
-	background-image: url("../img/portfolio/group.PNG");  width: 100%;
-	  height: auto !important;
-	  background-repeat: no-repeat !important;
-	  background-size: cover !important;
+    background-image: url("../img/portfolio/photoCollage2.png");
+    width: 100%;
+    height: auto !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    transition: 0.5s ease;
 }
 
 .headFront: before{
 	background: (0,0,0,0.5) !important;
 	z-index: 3 !important;
 }
-.headFront:hover:before {
-    background: none !important;
-}
+    .headFront:hover {
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        -webkit-filter: brightness(0.50);
+        -webkit-filter: saturate(1.5);
+    }
 
 .haedFront subHeadFront{
 	z-index: 4 !important;
@@ -40,11 +46,11 @@
 
 .flipInY {
     animation-duration: 1s !important;
-    animation-delay: 0.25s !important;
+    animation-delay: 0.75s !important;
 }
 
 .lightSpeedIn{
-animation-delay: 0.75s !important;
+animation-delay: 1.25s !important;
 }
 
 .masthead .masthead-avatar{
@@ -54,10 +60,6 @@ animation-delay: 0.75s !important;
 .headIcon{
 	width:6rem;
 }
-.rightlightspeedin{
-    animation-direction: reverse !important;
-	animation-delay: 1.25s !important;
-}
-.googleForms{
-	text-align: center !important;
+.section2{
+    height: 45rem !important;
 }
