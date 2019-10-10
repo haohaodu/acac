@@ -11,18 +11,23 @@
 }
 
 .headFront {
-	background-image: url("../img/portfolio/group.PNG");  width: 100%;
-	  height: auto !important;
-	  background-repeat: no-repeat !important;
-	  background-size: cover !important;
+    background-image: url("../img/portfolio/group.PNG");
+    width: 100%;
+    height: auto !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    transition: 0.8s ease;
 }
 
 .headFront: before{
 	background: (0,0,0,0.5) !important;
 	z-index: 3 !important;
 }
-.headFront:hover:before {
-    background: none !important;
+.headFront:hover{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    -webkit-filter: brightness(1.20);
 }
 
 .haedFront subHeadFront{
@@ -57,7 +62,4 @@ animation-delay: 0.75s !important;
 .rightlightspeedin{
     animation-direction: reverse !important;
 	animation-delay: 1.25s !important;
-}
-.googleForms{
-	text-align: center !important;
 }
