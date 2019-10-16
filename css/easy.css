@@ -1,4 +1,17 @@
-﻿.footer {
+﻿.lead a{
+    color: aqua !important;
+}
+
+.go-right .img-fluid{
+    display: inline-block;
+    width: 40%;
+}
+.go-right .lead {
+    display: inline-block;
+    width: 60%;
+}
+
+.footer {
     padding-top: 5rem;
     padding-bottom: 5rem;
     background-color: black;
@@ -60,7 +73,7 @@ animation-delay: 1.5s !important;
 animation-delay: 1s !important;
 }
 .masthead .masthead-avatar{
-	width: 10rem;
+	width: 20rem;
 }
 
 .headIcon{
