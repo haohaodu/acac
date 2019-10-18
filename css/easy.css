@@ -1,4 +1,15 @@
-﻿.lead a{
+﻿
+.headshots{
+    display: flex !important;
+}
+.headshot_philip {
+    flex: 0.725 !important;
+}
+.headshot-section-image {
+    height: auto !important;
+}
+
+.lead a {
     color: aqua !important;
 }
 
