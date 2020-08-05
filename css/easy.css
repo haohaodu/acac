@@ -1,95 +1,98 @@
-﻿
-.headshots{
-    display: flex !important;
+﻿.col {
+  flex-direction: column;
+}
+
+.headshots {
+  display: flex !important;
 }
 .headshot_philip {
-    flex: 0.725 !important;
+  flex: 0.725 !important;
 }
 .headshot-section-image {
-    height: auto !important;
+  height: auto !important;
 }
 
 .lead a {
-    color: aqua !important;
+  color: aqua !important;
 }
 
-.go-right .img-fluid{
-    display: inline-block;
-    width: 40%;
+.go-right .img-fluid {
+  display: inline-block;
+  width: 40%;
 }
 .go-right .lead {
-    display: inline-block;
-    width: 60%;
+  display: inline-block;
+  width: 60%;
 }
 
 .footer {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    background-color: black;
-    color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: black;
+  color: #fff;
 }
 .section-image {
-    object-fit: cover;
-    height: 16rem !important;
-    width: 100% !important;
+  object-fit: cover;
+  height: 16rem !important;
+  width: 100% !important;
 }
 
 .headFront {
-    background-image: url("../img/portfolio/photoCollage2.png");
-    width: 100%;
-    height: auto !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    transition: 0.5s ease;
+  background-image: url("../img/portfolio/photoCollage2.png");
+  width: 100%;
+  height: auto !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  transition: 0.5s ease;
 }
 
-.headFront: before{
-	background: (0,0,0,0.5) !important;
-	z-index: 3 !important;
+.headFront: before {
+  background: (0, 0, 0, 0.5) !important;
+  z-index: 3 !important;
 }
-    .headFront:hover {
-        width: 100%;
-        height: 100%;
-        background-color: #000;
-        -webkit-filter: brightness(0.50);
-        -webkit-filter: saturate(1.5);
-    }
+.headFront:hover {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  -webkit-filter: brightness(0.50);
+  -webkit-filter: saturate(1.5);
+}
 
-.haedFront subHeadFront{
-	z-index: 4 !important;
+.haedFront subHeadFront {
+  z-index: 4 !important;
 }
 
 .animated {
-    animation-duration: 1s !important;
-    animation-delay: 0s !important;
+  animation-duration: 1s !important;
+  animation-delay: 0s !important;
 }
 
 .rubberBand {
-    animation-name: rubberBand;
+  animation-name: rubberBand;
 }
 
 .flipInY {
-    animation-duration: 1s !important;
-    animation-delay: 0.5s !important;
+  animation-duration: 1s !important;
+  animation-delay: 0.5s !important;
 }
 
-.intro1{
-	animation-delay: 0.75s !important;
+.intro1 {
+  animation-delay: 0.75s !important;
 }
 
-.lightSpeedIn{
-animation-delay: 1.5s !important;
+.lightSpeedIn {
+  animation-delay: 1.5s !important;
 }
-.acacLogo{
-animation-delay: 1s !important;
+.acacLogo {
+  animation-delay: 1s !important;
 }
-.masthead .masthead-avatar{
-	width: 20rem;
+.masthead .masthead-avatar {
+  width: 20rem;
 }
 
-.headIcon{
-	width:6rem;
+.headIcon {
+  width: 6rem;
 }
-.section2{
-    height: auto !important;
+.section2 {
+  height: auto !important;
 }
